@@ -81,7 +81,8 @@ h1 { font: 500 clamp(56px, 7.4vw, 116px)/.9 var(--f); letter-spacing: -.055em; m
 
 /* sections */
 section { border-bottom: 2px solid var(--ink); }
-.sec { padding: 120px 0; }
+.sec { padding-top: 120px; padding-bottom: 120px; }
+body { padding-bottom: 64px; }
 .sec h2 { font: 500 clamp(44px, 5.4vw, 84px)/.95 var(--f); letter-spacing: -.05em; margin: 12px 0 18px; }
 .sec .sub { font-size: 20px; color: var(--ink-2); max-width: 680px; margin: 0 0 48px; }
 
@@ -211,7 +212,25 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
   .top .links a:not(.price) { display: none; }
   .tabbar a:not(.buy):not(.go) { display: none; }
   .lesson-layout { grid-template-columns: 1fr; gap: 28px; } .side { position: static; }
-  .sec { padding: 80px 0; }
+  .sec { padding-top: 64px; padding-bottom: 64px; }
+  .sec h2 { font-size: clamp(34px, 9vw, 52px); }
+  .sec .sub { font-size: 17px; margin-bottom: 32px; }
+  .lesson-layout { grid-template-columns: minmax(0, 1fr); padding: 28px 0 80px; }
+  .page-head { padding: 48px 0 24px; }
+  .page-head h1 { font-size: clamp(40px, 11vw, 64px); }
+  article.lesson h1 { font-size: clamp(34px, 9vw, 52px); }
+  article.lesson h2 { font-size: 26px; }
+  article.lesson table, article.lesson tbody, article.lesson tr, article.lesson td { display: block; width: 100%; }
+  article.lesson thead, article.lesson tr:has(th) { display: none; }
+  article.lesson tr { border-bottom: 2px solid var(--ink); padding: 6px 0; }
+  article.lesson td { border: 0; padding: 4px 14px; }
+  article.lesson td:first-child { font-weight: 600; padding-top: 10px; }
+  .side a.item { display: none; }
+  .side .sh { border-bottom: 0; }
+  .pcard .amt { font-size: 72px; }
+  details.faq summary { font-size: 19px; padding: 18px 0; }
+  .skill h3 { font-size: 26px; }
+  img, figure { max-width: 100%; }
 }
 @media (max-width: 960px) {
   .top .links a.price .tag { display: none; }
