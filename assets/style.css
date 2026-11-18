@@ -257,3 +257,36 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
 .track li::before { content: "→"; font-family: var(--mono); color: var(--purple); }
 .track .btn { align-self: flex-start; }
 @media (max-width: 960px) { .tracks { grid-template-columns: 1fr; } .track h3 { font-size: 26px; } .track .label span:last-child { display: none; } }
+
+/* stories, checks, playful progress */
+.story { border: 2px solid var(--ink); background: var(--cream); padding: 18px 22px; margin: 26px 0; position: relative; }
+.story b:first-child { display: table; font: 400 13px var(--mono); background: var(--ink); color: var(--yellow); padding: 4px 10px; margin-bottom: 10px; }
+.oops { border: 2px solid var(--ink); border-left: 8px solid var(--orange); background: #fff; padding: 14px 18px; margin: 22px 0; font-size: 16px; }
+.oops > b:first-child { display: block; font: 400 13px var(--mono); margin-bottom: 4px; }
+.check { border: 2px solid var(--ink); background: #fff; margin: 32px 0; }
+.check > b { display: block; background: var(--ink); color: #fff; padding: 12px 18px; font: 600 18px var(--f); }
+.check > b::before { content: "\25B6  "; color: var(--yellow); font-size: 13px; }
+.check ul { list-style: none; margin: 0; padding: 0; }
+.check li { padding: 14px 18px 14px 56px; border-bottom: 1px solid var(--line); position: relative; cursor: pointer; user-select: none; transition: background .15s; }
+.check li:last-child { border-bottom: 0; }
+.check li::before { content: ""; position: absolute; left: 18px; top: 15px; width: 20px; height: 20px; border: 2px solid var(--ink); background: #fff; }
+.check li.on { background: #EFFBF3; }
+.check li.on::before { background: var(--green); content: "\2713"; font: 700 14px/18px var(--f); text-align: center; color: var(--ink); }
+.check li:hover { background: #F4F8FF; }
+.check.won { border-color: var(--ink); box-shadow: none; }
+.check.won > b { background: var(--green); color: var(--ink); }
+.check.won > b::after { content: "  \2014 cleared!"; }
+.pill.xp { background: var(--yellow); }
+.xpbar { position: relative; height: 34px; border: 2px solid var(--ink); background: #fff; margin: 18px 0 0; }
+.xpbar i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: repeating-linear-gradient(90deg, var(--green) 0 18px, #6BD490 18px 20px); transition: width .6s; }
+.xpbar b { position: relative; display: block; font: 400 13px/30px var(--mono); padding: 0 12px; }
+.lvl.cleared .n::after { content: "\2713"; font-size: 22px; vertical-align: super; color: #2EAE63; margin-left: 6px; }
+.levelup { position: fixed; left: 50%; top: 40%; transform: translate(-50%, -50%) scale(.6); z-index: 99; background: var(--ink); color: #fff; border: 2px solid var(--ink); padding: 28px 40px; display: flex; flex-direction: column; align-items: center; gap: 6px; animation: pop .35s forwards; overflow: visible; }
+.levelup strong { font: 700 44px/1 var(--f); letter-spacing: -.03em; }
+.levelup span:last-of-type { font: 400 16px var(--mono); color: var(--yellow); }
+.levelup i { position: absolute; top: 0; width: 12px; height: 12px; animation: burst 1.4s ease-out forwards; }
+.levelup.out { animation: fade .5s forwards; }
+@keyframes pop { to { transform: translate(-50%, -50%) scale(1); } }
+@keyframes burst { 0% { transform: translateY(0) rotate(0); opacity: 1; } 100% { transform: translateY(-160px) rotate(220deg); opacity: 0; } }
+@keyframes fade { to { opacity: 0; transform: translate(-50%, -50%) scale(.9); } }
+@media (max-width: 960px) { .levelup strong { font-size: 30px; } .levelup { padding: 22px 26px; } }
