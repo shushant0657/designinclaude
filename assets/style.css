@@ -337,3 +337,4 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
 }
 @media (max-width: 960px) { .hide-sm { display: none; } .top .brand { font-size: 15px; } }
 @media (max-width: 380px) { .top .links a.keep { padding: 0 10px; font-size: 14px; } }
+.lvideo { margin: 22px 0 8px; } .lvideo video { width: 100%; display: block; background: var(--ink); aspect-ratio: 16/9; }
