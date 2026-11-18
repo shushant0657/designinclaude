@@ -236,3 +236,10 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
   .top .links a.price .tag { display: none; }
   .top .brand { padding: 0 14px; }
 }
+
+/* beginner helpers */
+.word { border: 2px solid var(--ink); border-left: 8px solid var(--cyan); background: #fff; padding: 14px 18px; margin: 18px 0; font-size: 16px; color: var(--ink-2); }
+.word b { display: block; font: 400 13px var(--mono); color: var(--ink); margin-bottom: 4px; }
+.try { border: 2px solid var(--ink); background: var(--green); padding: 16px 20px; margin: 22px 0; }
+.try b { display: block; font: 500 20px/1.2 var(--f); letter-spacing: -.02em; margin-bottom: 6px; }
+.try .say, .lesson span.say { display: block; background: #fff; }
