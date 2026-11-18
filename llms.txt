@@ -1,0 +1,14 @@
+# Design in Claude
+
+> Claude skills and a free Level 0 to 100 course that teach Claude your design system, so it designs UI screens that look like your product instead of generic AI output.
+
+- Home: https://designinclaude.com/
+- Free course: https://designinclaude.com/learn/
+- Level 0 · What is Claude, what is design, and why AI designs all look the same: https://designinclaude.com/learn/1-why-ai-ui-looks-generic.html — Start from zero: what Claude is, what an app designer does, your first chat, and the one idea this whole course is built on.
+- Level 10 · Make your app's rulebook and teach it to Claude: https://designinclaude.com/learn/2-encode-your-brand.html — Turn a few screenshots into a rulebook (a design-system skill) that Claude follows in every chat — every step, every message to type.
+- Level 25 · Make your first real screens: https://designinclaude.com/learn/3-design-screens-with-every-state.html — Ask for a screen in three simple lines and get every version of it — empty, loading, error and success — in one clickable file.
+- Level 50 · Learn to spot what's wrong with a design: https://designinclaude.com/learn/4-critique-like-a-design-lead.html — See a screen like a senior designer does: find the real problems, sort them by importance, fix them exactly — and turn every fix into a rule.
+- Level 75 · Check the whole journey and get feedback: https://designinclaude.com/learn/5-flows-and-reviews.html — Make sure screens fit together, find the screens everyone forgets, and run reviews where stakeholders give clear, useful feedback.
+- Level 90 · Hand your design to engineers (and share it with your team): https://designinclaude.com/learn/6-handoff-and-team-rollout.html — Explain your design so engineers build it exactly right, check it after it's built, and get your whole team designing from one rulebook.
+- Level 100 · Level 100: build your own design tools: https://designinclaude.com/learn/7-level-100-build-your-own-tools.html — Go past screens: build the skills, trackers, dashboards and plugins you and your team wish existed — and turn the best ones into products.
+- Skills pack ($29): https://shushant0657.gumroad.com/l/design-in-claude
