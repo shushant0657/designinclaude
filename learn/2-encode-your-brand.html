@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Encode your brand into Claude · Design in Claude</title><link rel="canonical" href="https://designinclaude.com/learn/2-encode-your-brand.html"><meta name="description" content="Turn your style guide, tokens or screenshots into a design-system skill — step by step.">
+<meta property="og:title" content="Encode your brand into Claude · Design in Claude"><meta property="og:type" content="website"><meta property="og:image" content="https://designinclaude.com/assets/img/states.jpg"><meta name="twitter:card" content="summary_large_image"><meta property="og:description" content="Turn your style guide, tokens or screenshots into a design-system skill — step by step.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css"><link rel="icon" href="../assets/favicon.svg">
+<script src="https://gumroad.com/js/gumroad.js"></script></head><body><header class="top"><a class="brand" href="../index.html"><i></i>Design in Claude</a>
+<nav class="links"><a href="../learn/index.html">Learn</a><a href="../index.html#skills">Skills</a><a href="../index.html#pricing">Pricing</a>
+<a class="price" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true"><span class="tag">&lt;price&gt;</span>$29<span class="tag">&lt;/price&gt;</span></a></nav></header><div class="wrap"><div class="lesson-layout"><aside class="side"><a class="sh" href="index.html"><span>← all levels</span><span>0 → 100</span></a><a class="item" href="1-why-ai-ui-looks-generic.html"><span>L0</span>Why AI-made UI looks generic — and how to fix it</a><a class="item on" href="2-encode-your-brand.html"><span>L10</span>Encode your brand into Claude</a><a class="item" href="3-design-screens-with-every-state.html"><span>L25</span>Design screens with every state<span class="lock">PACK</span></a><a class="item" href="4-critique-like-a-design-lead.html"><span>L50</span>Critique like a design lead<span class="lock">PACK</span></a><a class="item" href="5-flows-and-reviews.html"><span>L75</span>Check flows and run stakeholder reviews<span class="lock">PACK</span></a><a class="item" href="6-handoff-and-team-rollout.html"><span>L90</span>Hand off to developers and roll out to your team<span class="lock">PACK</span></a><a class="item" href="7-level-100-build-your-own-tools.html"><span>L100</span>Level 100: build your own design tools<span class="lock">PACK</span></a></aside>
+<article class="lesson"><div class="meta"><span class="tag">&lt;level&gt;</span>10<span class="tag">&lt;/level&gt;</span> · Lesson 2 of 7 · 15 min <span class="pill free">Free lesson</span></div>
+<h1>Encode your brand into Claude</h1><div class="learn-box"><h4>&lt;you-will-learn&gt;</h4><ul><li>What a design-system skill contains</li><li>How to extract it from what you already have</li><li>How to check it and install it</li></ul></div>
+<p>In this lesson you'll create the single most useful file in your AI workflow: a <strong>design-system skill</strong> for your product. You can write it by hand following the structure below, or let the <strong>Brand-to-Skill</strong> skill in the pack do the extraction for you in about 15 minutes.</p>
+
+<h2>What goes into a design-system skill</h2>
+<table>
+<tr><th>Section</th><th>What it holds</th><th>Why it matters</th></tr>
+<tr><td>Tokens</td><td>Colours by <em>role</em> (action, surface, muted text…), type scale, spacing scale, radii, borders/shadows</td><td>Claude uses names, not raw hex — so nothing off-brand sneaks in</td></tr>
+<tr><td>Principles</td><td>3 adjectives and what they mean in decisions</td><td>Breaks ties the way your team would</td></tr>
+<tr><td>Component recipes</td><td>Anatomy, variants, every state, sizes, a tiny code snippet</td><td>The biggest difference between "close" and "ours"</td></tr>
+<tr><td>Patterns</td><td>Empty, loading, error, forms, money, dates</td><td>Covers the screens people forget</td></tr>
+<tr><td>Voice</td><td>Button verbs, error tone, words to avoid</td><td>Copy is half of what makes UI feel like a product</td></tr>
+<tr><td>Do / Never</td><td>Your rules plus anti-generic rules</td><td>"Never" rules stop the stock-AI look</td></tr>
+<tr><td>Self-check</td><td>A 10-point list Claude runs before showing a screen</td><td>Catches mistakes before you see them</td></tr>
+</table>
+
+<h2>Step 1 — Name colours by role, not by hue</h2>
+<p>"Green" tells Claude nothing about when to use it. <code>--color-action-primary</code> does. Map every colour to a job: page background, surface, subtle surface, text, muted text, primary action, accent, border, success, warning, error. If a colour has no job, it probably shouldn't be in product UI.</p>
+
+<h2>Step 2 — Capture the rhythm</h2>
+<p>Most "almost right" AI screens fail on spacing, not colour. Write down your screen padding, card padding, gap between list items and gap between sections. Snap them to your spacing scale.</p>
+
+<h2>Step 3 — Write recipes for the 5 components you use most</h2>
+<p>Usually: button, input, card, list row, and one product-specific component (a price tag, a goal card, a seat). For each, list the states — default, hover, pressed, focus, disabled, loading, error — and what changes in each.</p>
+
+<h2>Step 4 — Add your Never list</h2>
+<p>Start with the universal ones: no colours outside the tokens, no gradients or shadows unless the brand uses them, no centred page titles in product UI, no lorem ipsum, no cards inside cards. Then add yours — the things that make your team wince.</p>
+
+<h2>Step 5 — Check it visually</h2>
+<p>Render a specimen page: every colour, type size, spacing step and core component on one page. If something doesn't look like your product, fix the <em>skill</em>, not just the page.</p>
+<figure><img src="../assets/img/specimen.jpg" alt="Specimen page generated from a design-system skill"><figcaption>The specimen for Saffron, generated from its tokens.</figcaption></figure>
+
+<h2>Step 6 — Test with one real screen</h2>
+<p>New chat, one line: "Design the &lt;screen from your backlog&gt;." If it still looks generic, your skill is missing a specific — usually a component recipe or a Never rule. Ask Claude: <em>"What rule would have prevented this? Add it to the design system."</em></p>
+
+<div class="callout"><b>With the pack:</b> say <code>Set up my design system for &lt;product&gt;</code> and share your screenshots or tokens. Brand-to-Skill runs all six steps, asks you to confirm the gaps in one reply, builds the skill, tokens file and specimen page, and tests it on a real screen.</div>
+
+<h2>Install it</h2>
+<ul><li><b>Claude app:</b> Settings → Skills → Upload skill (zip the folder first).</li><li><b>Claude Code:</b> put the folder in <code>~/.claude/skills/</code>, or <code>.claude/skills/</code> in your repo to share with your team.</li></ul>
+<p class="muted">Menu names can change as Claude updates; search "skills" in Claude's help centre if you can't find it.</p>
+<div class="pager"><a class="btn light sm" href="1-why-ai-ui-looks-generic.html" ><span>← Level 0</span><span class="arr">←</span></a><a class="btn sm" href="3-design-screens-with-every-state.html" ><span>Level 25: Design screens with every state</span><span class="arr">→</span></a></div></article></div></div><footer><div class="wrap"><div>© 2026 Shushant Kumar · Design in Claude</div>
+<div>Independent product. Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic.</div></div></footer><nav class="tabbar"><a href="../index.html#top" data-sec="top">Overview</a><a href="../index.html#problem" data-sec="problem">Problem</a><a href="../index.html#skills" data-sec="skills">Skills</a><a href="../index.html#examples" data-sec="examples">Examples</a><a href="../index.html#levels" data-sec="levels">Levels</a><a href="../index.html#faq" data-sec="faq">FAQ</a><a class="buy" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true">Get the pack · $29</a><a class="go" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true">↗</a></nav></body></html>
