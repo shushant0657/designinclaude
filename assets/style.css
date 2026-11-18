@@ -340,3 +340,8 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
 .lvideo { margin: 22px 0 8px; } .lvideo video { width: 100%; display: block; background: var(--ink); aspect-ratio: 16/9; }
 .homevideo { margin-top: 28px; max-width: 900px; border: 2px solid var(--ink); }
 .homevideo figcaption { border-top: 2px solid var(--ink); }
+
+.academy { border: 2px solid var(--ink); background: #fff; padding: 20px 22px; margin: 30px 0; box-shadow: none; }
+.academy .ac-tag { display: inline-block; font: 400 13px var(--mono); background: var(--orange); color: var(--ink); padding: 4px 10px; border: 2px solid var(--ink); }
+.academy h3 { margin: 12px 0 8px; }
+.academy .ac-links { font-size: 15px; color: var(--ink-2); border-top: 1px solid #DFDFDF; padding-top: 12px; margin-top: 14px; }
