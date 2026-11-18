@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free DESIGN.md Template for Claude & AI Agents (Download)</title><link rel="canonical" href="https://designinclaude.com/guides/design-md-template.html"><meta name="description" content="Download a free DESIGN.md template (Google&#x27;s open format) to describe your design system to Claude and other AI agents: tokens in YAML plus how to apply them.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><meta name="author" content="Shushant Kumar"><meta name="theme-color" content="#000F1D">
+<meta property="og:site_name" content="Design in Claude"><meta property="og:title" content="Free DESIGN.md Template for Claude & AI Agents (Download)"><meta property="og:type" content="article"><meta property="og:url" content="https://designinclaude.com/guides/design-md-template.html"><meta property="og:image" content="https://designinclaude.com/assets/img/og.jpg?v=1"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Free DESIGN.md Template for Claude & AI Agents (Download)"><meta property="og:description" content="Download a free DESIGN.md template (Google&#x27;s open format) to describe your design system to Claude and other AI agents: tokens in YAML plus how to apply them."><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Free DESIGN.md Template for Claude & AI Agents (Download)"><meta name="twitter:description" content="Download a free DESIGN.md template (Google&#x27;s open format) to describe your design system to Claude and other AI agents: tokens in YAML plus how to apply them."><meta name="twitter:image" content="https://designinclaude.com/assets/img/og.jpg?v=1">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Free DESIGN.md Template for Claude & AI Agents (Download)", "description": "Download a free DESIGN.md template (Google's open format) to describe your design system to Claude and other AI agents: tokens in YAML plus how to apply them.", "url": "https://designinclaude.com/guides/design-md-template.html", "mainEntityOfPage": "https://designinclaude.com/guides/design-md-template.html", "image": "https://designinclaude.com/assets/img/og.jpg", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Shushant Kumar", "jobTitle": "Product Design Manager"}, "publisher": {"@type": "Organization", "name": "Design in Claude", "logo": {"@type": "ImageObject", "url": "https://designinclaude.com/assets/apple-touch-icon.png"}}, "keywords": "design.md template"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is DESIGN.md?", "acceptedAnswer": {"@type": "Answer", "text": "An open, plain-text format (published by Google) that describes a product's design system to AI agents: exact tokens in YAML front matter and guidance in Markdown."}}, {"@type": "Question", "name": "Does Claude understand DESIGN.md?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Claude reads it like any Markdown file. Put it in a skill or a project, and ask Claude to follow it when designing."}}, {"@type": "Question", "name": "Is this template free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — download it and use it for any project."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://designinclaude.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://designinclaude.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "Free DESIGN.md template", "item": "https://designinclaude.com/guides/design-md-template.html"}]}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css?v=14"><link rel="icon" href="../assets/favicon.svg">
+<script src="https://gumroad.com/js/gumroad.js"></script></head><body><header class="top"><a class="brand" href="../index.html"><i></i>Design in Claude</a>
+<nav class="links"><a class="keep" href="../learn/index.html">Free lessons</a><a href="../guides/">Guides</a><a href="../index.html#skills">Skills</a><a href="../index.html#pricing">Pricing</a>
+<a class="price" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true"><span class="hide-sm">Get the pack · </span>$29</a></nav></header>
+<div class="wrap"><article class="lesson guide" style="max-width:760px;margin:0 auto;padding:40px 0 96px">
+<div class="meta"><a class="tag" href="./">Guides</a> · Design in Claude · updated 2026-11-18</div>
+<h1>Free DESIGN.md template</h1><p><b>DESIGN.md</b> is an open format for describing a visual identity to AI design and coding agents. The top holds exact token values in YAML; the body explains <i>why</i> and <i>how</i> to use them. Drop it in your repo or your Claude skill and agents stop guessing.</p>
+<p><a class="btn" href="../assets/DESIGN.md" download><span>Download DESIGN.md</span><span class="arr">↓</span></a></p><h2>The rules of the format</h2>
+<ul><li>Sections are optional but must appear in this order: Overview, Colors, Typography, Layout, Elevation &amp; Depth, Shapes, Components, Do's and Don'ts.</li>
+<li>No duplicate headings or duplicate top-level YAML keys.</li>
+<li>Reference tokens with braces, like <code>{colors.primary}</code>.</li>
+<li>Component variants are separate keys, like <code>button-primary</code> and <code>button-primary-pressed</code>.</li>
+<li>If you have Node, lint it: <code>npx @google/design.md lint DESIGN.md</code> (checks structure, references and contrast).</li></ul>
+<h2>The template</h2>
+<pre class="code">---
+version: alpha
+name: &lt;Product&gt;
+description: &lt;one line&gt;
+colors:
+  primary: &quot;#0F3D2E&quot;
+  on-primary: &quot;#FFFFFF&quot;
+  background: &quot;#FBF7F0&quot;
+  surface: &quot;#FFFFFF&quot;
+  text: &quot;#13231C&quot;
+  text-muted: &quot;#5E6B64&quot;
+  accent: &quot;#F2A33A&quot;
+  border: &quot;#E6DDCF&quot;
+  success: &quot;#1F7A4D&quot;
+  warning: &quot;#B86E00&quot;
+  error: &quot;#B3261E&quot;
+typography:
+  display: { fontFamily: &quot;Inter&quot;, fontSize: 40px, fontWeight: 700, lineHeight: 44px }
+  h1: { fontFamily: &quot;Inter&quot;, fontSize: 24px, fontWeight: 700, lineHeight: 30px }
+  body: { fontFamily: &quot;Inter&quot;, fontSize: 15px, fontWeight: 400, lineHeight: 22px }
+  label: { fontFamily: &quot;Inter&quot;, fontSize: 14px, fontWeight: 600, lineHeight: 20px }
+rounded:
+  button: 12px
+  card: 16px
+  sheet: 24px
+  chip: 999px
+spacing:
+  xs: 4px
+  sm: 8px
+  md: 16px
+  lg: 24px
+  xl: 32px
+components:
+  button-primary: { backgroundColor: &quot;{colors.primary}&quot;, textColor: &quot;{colors.on-primary}&quot;, typography: &quot;{typography.label}&quot;, rounded: &quot;{rounded.button}&quot;, height: 52px, padding: 16px }
+  button-primary-pressed: { backgroundColor: &quot;#0A2C21&quot; }
+  card: { backgroundColor: &quot;{colors.surface}&quot;, rounded: &quot;{rounded.card}&quot;, padding: 16px }
+---
+
+## Overview
+&lt;What the product is, who uses it, the 3 adjectives for how it should feel.&gt;
+
+## Colors
+&lt;Each colour&#x27;s job, and what it must never be used for.&gt;
+
+## Typography
+&lt;Fonts, the scale, when to use each style.&gt;
+
+## Layout
+&lt;Grid, screen padding, spacing rhythm, navigation pattern.&gt;
+
+## Elevation &amp; Depth
+&lt;Borders vs shadows and where each is used.&gt;
+
+## Shapes
+&lt;Corner radii and why.&gt;
+
+## Components
+&lt;For each core component: when to use, default variant, states.&gt;
+
+## Do&#x27;s and Don&#x27;ts
+- Do …
+- Don&#x27;t …
+</pre>
+<h2>Let Claude fill it in</h2>
+<div class="say copyable">Read my tokens.css and the rules in my design-system skill. Fill in this DESIGN.md template with my real values — never invent a value. Keep the section order.</div><div class="callout"><b>Learn it step by step (free).</b> The <a href="../learn/">Design in Claude course</a> goes from Level 0 to 100 with short videos — Levels 0 and 10 are free. Want Claude to do every step for you? The <a href="../index.html#pricing">skills pack</a> turns all of this into six Claude skills.</div><h2>Questions</h2><div class="faqs"><details class="faq"><summary>What is DESIGN.md?</summary><p>An open, plain-text format (published by Google) that describes a product&#x27;s design system to AI agents: exact tokens in YAML front matter and guidance in Markdown.</p></details><details class="faq"><summary>Does Claude understand DESIGN.md?</summary><p>Yes. Claude reads it like any Markdown file. Put it in a skill or a project, and ask Claude to follow it when designing.</p></details><details class="faq"><summary>Is this template free?</summary><p>Yes — download it and use it for any project.</p></details></div>
+<h2>More guides</h2><ul><li><a href="claude-prompts-for-ui-design.html">39 Claude prompts for UI design</a></li><li><a href="how-to-design-ui-with-claude.html">How to design UI with Claude, step by step</a></li><li><a href="claude-design-system-skill.html">How to put your design system into Claude</a></li><li><a href="claude-vs-figma-for-ui-design.html">Claude vs Figma for UI design</a></li></ul></article></div><footer><div class="wrap"><div class="flinks"><a href="/learn/">Free Claude design course</a> · <a href="/guides/claude-prompts-for-ui-design.html">Claude prompts for UI design</a> · <a href="/guides/how-to-design-ui-with-claude.html">How to design UI with Claude</a> · <a href="/guides/claude-design-system-skill.html">Design system skill</a> · <a href="/guides/design-md-template.html">DESIGN.md template</a> · <a href="/guides/claude-vs-figma-for-ui-design.html">Claude vs Figma</a></div><div>Independent product. Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic.</div></div></footer><nav class="tabbar"><a href="../index.html#top" data-sec="top">Overview</a><a href="../index.html#how" data-sec="how">How</a><a href="../index.html#for" data-sec="for">Who</a><a href="../index.html#problem" data-sec="problem">Problem</a><a href="../index.html#skills" data-sec="skills">Skills</a><a href="../index.html#examples" data-sec="examples">Examples</a><a href="../index.html#levels" data-sec="levels">Levels</a><a href="../index.html#faq" data-sec="faq">FAQ</a><a class="buy" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true">Get the pack · $29</a><a class="go" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true">↗</a></nav><script>document.querySelectorAll('.copyable').forEach(e=>{e.title='Tap to copy';e.style.cursor='copy';e.addEventListener('click',()=>{navigator.clipboard&&navigator.clipboard.writeText(e.innerText);e.classList.add('copied');setTimeout(()=>e.classList.remove('copied'),1200)})})</script><script src="assets/play.js?v=1"></script></body></html>

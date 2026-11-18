@@ -345,3 +345,10 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
 .academy .ac-tag { display: inline-block; font: 400 13px var(--mono); background: var(--orange); color: var(--ink); padding: 4px 10px; border: 2px solid var(--ink); }
 .academy h3 { margin: 12px 0 8px; }
 .academy .ac-links { font-size: 15px; color: var(--ink-2); border-top: 1px solid #DFDFDF; padding-top: 12px; margin-top: 14px; }
+
+.guide h2 { margin-top: 40px; }
+.say.copied { background: var(--green); }
+pre.code { font: 13px/1.5 var(--mono); background: var(--ink); color: #E6EDF3; padding: 18px; overflow-x: auto; border: 2px solid var(--ink); white-space: pre; }
+.table-wrap { overflow-x: auto; margin: 24px 0; } table.cmp { border-collapse: collapse; width: 100%; font-size: 16px; } table.cmp th, table.cmp td { border: 2px solid var(--ink); padding: 10px 12px; text-align: left; vertical-align: top; } table.cmp th { background: var(--ink); color: #fff; font-weight: 600; } table.cmp td:first-child { font-weight: 600; background: var(--paper); }
+.guides-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; } .grow { display: block; border: 2px solid var(--ink); background: #fff; padding: 20px; text-decoration: none; color: var(--ink); } .grow:hover { background: var(--yellow); } .grow h3 { margin: 0 0 8px; } .grow p { margin: 0; color: var(--ink-2); font-size: 15px; }
+footer .flinks { margin-bottom: 10px; font-size: 14px; } footer .flinks a { color: inherit; }
