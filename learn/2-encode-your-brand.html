@@ -4,7 +4,7 @@
 <meta property="og:title" content="Make your app's rulebook and teach it to Claude · Design in Claude"><meta property="og:type" content="website"><meta property="og:image" content="https://designinclaude.com/assets/img/states.jpg?v=2"><meta name="twitter:card" content="summary_large_image"><meta property="og:description" content="Turn a few screenshots into a rulebook (a design-system skill) that Claude follows in every chat — every step, every message to type.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/style.css?v=9"><link rel="icon" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../assets/style.css?v=10"><link rel="icon" href="../assets/favicon.svg">
 <script src="https://gumroad.com/js/gumroad.js"></script></head><body><header class="top"><a class="brand" href="../index.html"><i></i>Design in Claude</a>
 <nav class="links"><a href="../learn/index.html">Learn</a><a href="../index.html#skills">Skills</a><a href="../index.html#pricing">Pricing</a>
 <a class="price" href="https://shushant0657.gumroad.com/l/design-in-claude" data-gumroad-overlay-checkout="true"><span class="tag">&lt;price&gt;</span>$29<span class="tag">&lt;/price&gt;</span></a></nav></header><div class="wrap"><div class="lesson-layout"><aside class="side"><a class="sh" href="index.html"><span>← all levels</span><span>0 → 100</span></a><a class="item" href="1-why-ai-ui-looks-generic.html"><span>L0</span>What is Claude, what is design, and why AI designs all look the same</a><a class="item on" href="2-encode-your-brand.html"><span>L10</span>Make your app&#x27;s rulebook and teach it to Claude</a><a class="item" href="3-design-screens-with-every-state.html"><span>L25</span>Make your first real screens<span class="lock">PACK</span></a><a class="item" href="4-critique-like-a-design-lead.html"><span>L50</span>Learn to spot what&#x27;s wrong with a design<span class="lock">PACK</span></a><a class="item" href="5-flows-and-reviews.html"><span>L75</span>Check the whole journey and get feedback<span class="lock">PACK</span></a><a class="item" href="6-handoff-and-team-rollout.html"><span>L90</span>Hand your design to engineers (and share it with your team)<span class="lock">PACK</span></a><a class="item" href="7-level-100-build-your-own-tools.html"><span>L100</span>Level 100: build your own design tools<span class="lock">PACK</span></a></aside>
@@ -26,6 +26,12 @@
 <tr><td>6. Never list</td><td>Things your app never does</td><td>“Never purple. Never fake text.”</td></tr>
 <tr><td>7. Self-check</td><td>A checklist Claude runs before showing you anything</td><td>“Did I only use our colours?”</td></tr>
 </table>
+
+<h2>No app yet? Start from references</h2>
+<p>Building something brand new, with no screens to screenshot? Don't invent a style from nothing — that's exactly how generic AI UI happens. Borrow on purpose instead:</p>
+<ol class="steps"><li><b>Pick 4–6 apps or sites you love.</b> Good free places to look: Mobbin (real app screens), Refero, Pinterest, Dribbble.</li><li><b>Write one thing you like about each.</b> Be specific: “the calm cream background”, “the big bold numbers”, “the chunky black buttons”.</li><li><b>Ask Claude to remix them</b> into one system (below). Then continue from Step 1 with the result instead of screenshots.</li></ol>
+<div class="say">I don't have a design system yet. My product is [one line] for [who]. It should feel [3 words]. Here are apps I love and what I like in each: [list]. Make a remix table: one row per design decision, which reference it comes from, and the value you propose. Take ideas, not identities — the result must look like a new product, not a copy.</div>
+<div class="callout"><b>With the pack:</b> say <code>I don't have a design system — start from references</code> and Brand-to-Skill runs this for you.</div>
 
 <h2>Step 0 — Start a project (2 minutes)</h2>
 <p>In Claude, create a <b>Project</b> called “[Your app] design system” and upload your screenshots to it. A project keeps files and chats together, so you don't have to re-upload every time.</p>
@@ -69,7 +75,8 @@
 <figure><img src="../assets/img/specimen.jpg" alt="Specimen page showing a rulebook's colours, text and pieces"><figcaption>Saffron's specimen page: the whole rulebook on one page.</figcaption></figure>
 
 <h2>Step 8 — Turn it into a skill and install it</h2>
-<div class="say">Turn everything we decided into a design-system skill folder: a SKILL.md with the rules, the Never list and a 10-point self-check, plus a tokens.css file. The skill should load whenever I ask to design a screen for [app name]. Give me the folder as a zip.</div>
+<div class="say">Turn everything we decided into a design-system skill folder: a SKILL.md with the rules, the Never list and a 10-point self-check, a tokens.css file, and a DESIGN.md that describes the same system in plain markdown. The skill should load whenever I ask to design a screen for [app name]. Give me the folder as a zip.</div>
+<div class="word"><b>New word: DESIGN.md</b>An open, plain-text format for describing a product's look to any AI tool. Your Claude skill is the engine; DESIGN.md is a copy you can hand to other tools or to teammates who don't use Claude.</div>
 <p>Then install it:</p>
 <ul><li><b>Claude website or app:</b> Settings → Capabilities (or Skills) → Upload skill → pick the zip. Make sure it's switched on.</li><li><b>Claude Code</b> (for people who code): unzip it into <code>~/.claude/skills/</code>.</li></ul>
 <p class="muted">Menu names change as Claude updates. If you can't find Skills, search “skills” in Claude's help centre.</p>

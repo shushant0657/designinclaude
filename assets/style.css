@@ -290,3 +290,18 @@ article.lesson code { font: 14px var(--mono); background: #fff; border: 1.5px so
 @keyframes burst { 0% { transform: translateY(0) rotate(0); opacity: 1; } 100% { transform: translateY(-160px) rotate(220deg); opacity: 0; } }
 @keyframes fade { to { opacity: 0; transform: translate(-50%, -50%) scale(.9); } }
 @media (max-width: 960px) { .levelup strong { font-size: 30px; } .levelup { padding: 22px 26px; } }
+
+/* bonus skills */
+.bonus-head { margin: 56px 0 20px; }
+.bonus-head h3 { font: 700 clamp(28px, 3vw, 40px)/1.05 var(--f); letter-spacing: -.03em; margin: 10px 0 6px; }
+.bonus-head p { margin: 0; color: var(--ink-2); }
+.bonus { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.bskill { border: 2px solid var(--ink); background: #fff; padding: 18px; position: relative; }
+.bskill .bn { position: absolute; top: -2px; right: -2px; background: var(--yellow); border: 2px solid var(--ink); font: 12px var(--mono); padding: 3px 8px; }
+.bskill h4 { margin: 0 0 8px; font: 700 22px/1.1 var(--f); letter-spacing: -.02em; }
+.bskill .say { margin: 0 0 10px; }
+.bskill p { margin: 0; color: var(--ink-2); font-size: 16px; }
+.newbits { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+.newbits > div { border: 2px dashed var(--ink); padding: 14px 18px; font-size: 16px; background: var(--paper); }
+.newbits code { font: 14px var(--mono); }
+@media (max-width: 960px) { .bonus, .newbits { grid-template-columns: 1fr; } }
