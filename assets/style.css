@@ -3,7 +3,7 @@
   --paper: #F7F7F7; --ink: #000F1D; --ink-2: #31404E; --muted: #61686D; --mute-2: #7C838A;
   --line: #DFDFDF; --grid: #4DA2FF; --cyan: #00BFFF; --blue: #4DA2FF;
   --orange: #F79F4D; --lav: #DBCDEB; --yellow: #FFD74A; --green: #7EDFA0; --purple: #5C4ADE; --cream: #F2EEE4;
-  --f: "Inter Tight", "Inter Display", "Inter", system-ui, sans-serif;
+  --f: "Geist", system-ui, sans-serif;
   --mono: "JetBrains Mono", "DejaVu Sans Mono", ui-monospace, monospace;
   --max: 1280px; --cell: 104px;
 }
